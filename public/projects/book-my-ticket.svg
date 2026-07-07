@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD6E8"/>
+      <stop offset="100%" stop-color="#E9D5FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#a)"/>
+  <rect x="60" y="130" width="480" height="140" rx="16" fill="#ffffff" fill-opacity="0.6"/>
+  <circle cx="60" cy="200" r="14" fill="#FFD6E8"/>
+  <circle cx="540" cy="200" r="14" fill="#FFD6E8"/>
+  <text x="300" y="205" font-family="Poppins, sans-serif" font-weight="700" font-size="28" fill="#7A5580" text-anchor="middle">Book My Ticket</text>
+  <text x="300" y="235" font-family="Poppins, sans-serif" font-size="14" fill="#9A7AA0" text-anchor="middle">Java · Spring Boot · MySQL</text>
+</svg>

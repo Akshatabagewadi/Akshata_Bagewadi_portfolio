@@ -1,0 +1,202 @@
+:root {
+  --pink: #FFD6E8;
+  --lavender: #E9D5FF;
+  --baby-blue: #D9F3FF;
+  --mint: #D7FFF2;
+  --peach: #FFE8D6;
+
+  --pink-deep: #F5A8C9;
+  --lavender-deep: #C7A0F0;
+  --blue-deep: #A6DEF2;
+
+  --glass-bg: rgba(255, 255, 255, 0.55);
+  --glass-bg-strong: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.6);
+
+  --text-dark: #4A3F55;
+  --text-muted: #7A6E87;
+  --text-soft: #9C90A8;
+
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+
+  --shadow-soft: 0 8px 32px rgba(180, 150, 200, 0.18);
+  --shadow-hover: 0 16px 48px rgba(180, 150, 200, 0.28);
+
+  --section-padding: 120px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  background: linear-gradient(180deg, #FFF9FC 0%, #FBF6FF 30%, #F5FBFF 60%, #F3FFFB 100%);
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: var(--pink-deep);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FBF6FF;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--pink-deep), var(--lavender-deep));
+  border-radius: 10px;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--glass-bg-strong);
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin-bottom: 18px;
+  border: 1px solid var(--glass-border);
+}
+
+.section-title {
+  font-size: clamp(32px, 4.5vw, 46px);
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #C98AAE, #A98AD9, #7DBEDE);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 30px;
+  border-radius: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--pink-deep), var(--lavender-deep));
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(199, 160, 240, 0.45);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 16px 38px rgba(199, 160, 240, 0.55);
+}
+
+.btn-outline {
+  background: var(--glass-bg-strong);
+  border: 1.5px solid var(--glass-border);
+  color: var(--text-dark);
+}
+
+.btn-outline:hover {
+  transform: translateY(-3px);
+  border-color: var(--pink-deep);
+}
+
+.pill {
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  background: var(--glass-bg-strong);
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 80px 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}

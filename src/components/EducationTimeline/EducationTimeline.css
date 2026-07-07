@@ -1,0 +1,107 @@
+.education {
+  padding: var(--section-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--pink), var(--lavender), var(--baby-blue));
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 0 50px 60px;
+}
+
+.timeline-left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 4px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--glass-bg-strong);
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--pink-deep);
+  box-shadow: var(--shadow-soft);
+  z-index: 1;
+}
+
+.timeline-left .timeline-dot {
+  right: -22px;
+}
+
+.timeline-right .timeline-dot {
+  left: -22px;
+}
+
+.timeline-card {
+  padding: 26px 28px;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.timeline-period {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--pink-deep);
+  text-transform: uppercase;
+}
+
+.timeline-card h3 {
+  font-size: 17px;
+  margin: 8px 0 6px;
+}
+
+.timeline-institution {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+@media (max-width: 760px) {
+  .timeline::before {
+    left: 22px;
+  }
+  .timeline-item, .timeline-left, .timeline-right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 0 0 50px 60px;
+  }
+  .timeline-left .timeline-dot,
+  .timeline-right .timeline-dot {
+    left: 0;
+    right: auto;
+  }
+}

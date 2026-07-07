@@ -1,0 +1,204 @@
+.leadership {
+  padding: var(--section-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.leadership-card {
+  padding: 32px;
+}
+
+.leadership-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--peach), var(--pink));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  color: #A15C6E;
+  margin-bottom: 18px;
+}
+
+.leadership-card h3 {
+  font-size: 16.5px;
+  margin-bottom: 10px;
+}
+
+.leadership-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 760px) {
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Leadership Cards */
+
+.leadership-card{
+    position: relative;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(12px);
+    border-radius: 24px;
+    padding: 28px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .4s ease;
+    border: 1px solid rgba(139,92,246,.08);
+}
+
+/* Top Gradient Border */
+
+.leadership-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#ec4899,#8b5cf6,#6366f1);
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:.4s;
+}
+
+.leadership-card:hover::before{
+    transform:scaleX(1);
+}
+
+/* Hover Effect */
+
+.leadership-card:hover{
+    transform:translateY(-12px) scale(1.02);
+    box-shadow:0 25px 60px rgba(139,92,246,.25);
+    background:linear-gradient(135deg,#ffffff,#faf5ff);
+}
+
+/* Icon */
+
+.leadership-icon{
+    width:55px;
+    height:55px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f3e8ff;
+    color:#8b5cf6;
+    transition:.5s;
+}
+
+.leadership-card:hover .leadership-icon{
+    background:#8b5cf6;
+    color:#fff;
+    transform:rotate(360deg) scale(1.15);
+}
+
+/* Title */
+
+.leadership-card h3{
+    transition:.3s;
+}
+
+.leadership-card:hover h3{
+    color:#8b5cf6;
+}
+
+/* Description */
+
+.leadership-card p{
+    transition:.3s;
+    line-height:1.7;
+}
+
+.leadership-card:hover p{
+    color:#444;
+}
+
+/* Floating Glow */
+
+.leadership-card::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(139,92,246,.08);
+    top:-70px;
+    right:-70px;
+    transition:.5s;
+}
+
+.leadership-card:hover::after{
+    transform:scale(1.3);
+}
+
+/* Badge */
+
+.leadership-badge{
+    display:inline-block;
+    margin-top:16px;
+    padding:6px 14px;
+    border-radius:30px;
+    background:#f3e8ff;
+    color:#8b5cf6;
+    font-weight:600;
+    transition:.3s;
+}
+
+.leadership-card:hover .leadership-badge{
+    background:#8b5cf6;
+    color:white;
+}.leadership-card {
+  transition: all 0.4s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.leadership-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(138, 43, 226, 0.18);
+  border-color: #c084fc;
+}.leadership-card .icon {
+  transition: all 0.4s ease;
+}
+
+.leadership-card:hover .icon {
+  transform: rotate(12deg) scale(1.2);
+  background: linear-gradient(135deg,#ec4899,#8b5cf6);
+  color: white;
+}
+.leadership-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.leadership-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(#ec4899,#8b5cf6);
+  transition: .4s;
+}
+
+.leadership-card:hover::before {
+  width: 6px;
+}
+.leadership-card:hover{
+    background:#fff;
+    box-shadow:
+      0 15px 35px rgba(168,85,247,.18),
+      0 0 25px rgba(236,72,153,.12);
+}

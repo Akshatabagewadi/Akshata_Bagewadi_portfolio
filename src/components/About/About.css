@@ -1,0 +1,138 @@
+.about {
+  padding: var(--section-padding);
+  position: relative;
+  z-index: 1;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 28px;
+}
+
+.about-card {
+  padding: 40px;
+}
+.about-card{
+    background:#fff;
+    border-radius:24px;
+    padding:32px;
+    transition:all .4s ease;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.about-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(139,92,246,.18);
+}
+
+.about-summary {
+  font-size: 16.5px;
+  line-height: 1.85;
+  color: var(--text-muted);
+  margin-bottom: 26px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.about-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:0%;
+    background:linear-gradient(#c084fc,#8b5cf6);
+    transition:.4s;
+}
+
+.about-card:hover::before{
+    height:100%;
+}
+
+.about-info li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: var(--text-dark);
+}
+
+.about-info svg {
+  color: var(--pink-deep);
+  font-size: 18px;
+}
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.about-tags-card h4 {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-card {
+    padding: 30px 26px;
+  }
+}
+.strength-item{
+    transition:.3s;
+    cursor:pointer;
+}
+
+.strength-item:hover{
+    background:#8b5cf6;
+    color:white;
+    transform:translateY(-4px) scale(1.05);
+}
+.interest-item{
+    transition:.3s;
+}
+
+.interest-item:hover{
+    background:#ec4899;
+    color:white;
+    transform:scale(1.08);
+}
+.about-contact svg{
+    transition:.3s;
+}
+
+.about-contact:hover svg{
+    color:#8b5cf6;
+    transform:scale(1.25);
+}
+.about{
+    background:
+    radial-gradient(circle at top left,#f3e8ff,transparent 40%),
+    radial-gradient(circle at bottom right,#dbeafe,transparent 40%),
+    #fafafa;
+}
+.about-title{
+    transition:.3s;
+}
+
+.about-title:hover{
+    letter-spacing:2px;
+    color:#8b5cf6;
+}

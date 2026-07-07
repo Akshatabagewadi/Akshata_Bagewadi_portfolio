@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE8D6"/>
+      <stop offset="100%" stop-color="#FFD6E8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#c)"/>
+  <rect x="220" y="120" width="160" height="160" rx="18" fill="#ffffff" fill-opacity="0.55"/>
+  <line x1="180" y1="150" x2="220" y2="150" stroke="#C98A6E" stroke-width="3"/>
+  <line x1="180" y1="200" x2="220" y2="200" stroke="#C98A6E" stroke-width="3"/>
+  <line x1="180" y1="250" x2="220" y2="250" stroke="#C98A6E" stroke-width="3"/>
+  <line x1="380" y1="150" x2="420" y2="150" stroke="#C98A6E" stroke-width="3"/>
+  <line x1="380" y1="200" x2="420" y2="200" stroke="#C98A6E" stroke-width="3"/>
+  <line x1="380" y1="250" x2="420" y2="250" stroke="#C98A6E" stroke-width="3"/>
+  <text x="300" y="320" font-family="Poppins, sans-serif" font-weight="700" font-size="22" fill="#A15C46" text-anchor="middle">8-bit Multiplier Design</text>
+  <text x="300" y="345" font-family="Poppins, sans-serif" font-size="13" fill="#B87A63" text-anchor="middle">Verilog HDL · 45nm CMOS</text>
+</svg>
