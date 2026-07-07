@@ -1,4 +1,4 @@
-import "./Stats.css";
+import "./stats.css";
 
 export default function Stats() {
   const stats = [
